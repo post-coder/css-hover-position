@@ -1,0 +1,39 @@
+
+.container {
+    border: solid 2px blue;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+
+
+.btn {
+    display: inline-block;
+
+    padding: 12px 18px;
+
+    border-radius: 18px;
+
+    background-color: darkblue;
+    color: white;
+
+    border: 1px solid black;
+}
+
+.btn:hover {
+    background-color: aqua;
+    color: darkblue;
+
+    /* transform: scale(1.1); */
+
+    box-shadow: 3px 5px 6px #00000040;
+}
+
+

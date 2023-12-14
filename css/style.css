@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* reset */
+
+
+.btn {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    /* un altro valore utilizzabile per scegliere quale elemento visualizzare uno sopra l'altro è lo z-index */
+    z-index: 1;
+
+    padding: 8px 12px;
+}
+
+
+.container {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 100px;
+
+    border: 1px solid black;
+
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+}
+
+.red {
+    background-color: red;
+}
+
+.orange {
+    /*
+    il position relative cambia solo la VISUALIZZAZIONE dell'elemento,
+    non la sua posizione attuale
+    nell'ingombro della pagina
+    */
+    /* position: relative;
+    top: 10px;
+    right: 10px; */
+
+
+    /*
+    position absolute:
+    innanzitutto RIMUOVE l'elemento dal flusso della pagina,
+    dopodichè posiziona l'elemento in base ai valori delle proprietà top, left, right o bottom
+    in base a dove si trova il suo antenato che ha un position settato non static (proprietà default)
+    */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+
+    /* position fixed:
+    innanzitutto RIMUOVE l'elemento dal flusso della pagina,
+    dopodichè posiziona l'elemento secondo i valori top, left, bottom o right
+    in base alle dimensioni della viewport
+    non si usa quasi mai senza indicare almeno le due direzioni
+     */
+    /* position: fixed;
+    right: 20px;
+    bottom: 20px; */
+
+    background-color: orange;
+    /* border: 5px solid orange; */
+}
+
+.yellow {
+    background-color: yellow;
+}
